@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Item</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="item-style.css">
+        <script src="item.js"></script>
+        <!-- some code referencing W3School -->
+</head>
+
+<body onload="onload()">
+    <header>
+            <!-- TOP TITLE --> 
+            <div class="containter">
+                <div id="name">
+                    <a href="index.html">
+                        <h2>FLUFF STUFF</h2>
+                    </a>
+                </div>
+
+                <!-- NAV BAR -->
+                <div class="nav">
+                      <a href="product.html">PRODUCT</a>
+                      <a href="collection.html">COLLECTIONS</a>
+                       <a href="#sale">SALE</a>
+                      <a href="#contact">CONTACT</a>
+                      <input type="text" placeholder="Search..">
+                      <img src="https://image.flaticon.com/icons/png/512/55/55369.png" alt="search bar" class="search-icon"  style="width:5%" />
+                      <a href="checkout.html" id="sc" ><img src="cart.png" formaction="checkout.html" id="shopcart" style="width:100%" alt="cart" /></a> 
+                      <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png" alt="sign in icon" class="account"  style="width:3%" />
+                </div>
+            </div>
+    </header>
+
+    <!-- PATH TRACK -->
+    <div class="path"> 
+        <nav>
+            <ul>
+                <li><a href="index.html">home&lt;</a></li>
+                <li><a href="product.html">shop items&lt;</a></li>
+                <li><a href="item.html">Travel Pillow</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   <!-- ITEMS DETAIL -->
+    <div class="grid">
+        <div class="image-box">
+        </div>
+
+        <div class="info-box">
+        </div>
+    </div>
+
+    <div class="item-display">
+       <!-- ITEMS pic -->
+        <div class="box left" >
+            <img src="https://infinitypillow.co/wp-content/uploads/2014/04/travel_pillow_travel_grey.jpg" alt="item detal pic" style="width: 100%" id="pillowImage"/>
+        </div>
+         <!-- ITEMS options -->
+         <div class="box right" >
+          
+            <div class="itemTitle">
+              <input type="text" id="itemName" value="Travel Pillow" >
+              <input type="text" name="name" id="total-price" value="$18" >
+            </div>          
+             <!-- quantity -->
+             <div class="quantity">
+                
+                <button class="plus-btn" type="button" name="button" onclick="addQuant()">+</button>
+                <input type="text" name="name" id="itemQuant" value="1" >
+                <button class="minus-btn" type="button" name="button" onclick="minusQuant()">-</button>
+             </div>
+             <!-- color -->
+             <div  id="colorbox">
+                <h3>COLOR</h3>
+                <form name="jump" class="colorselect">
+                  <select name="menu" onchange="gotoImage(this)" id="selectColor">
+                      <option value="After School Special" class="colorA">After School Special</option>
+                      <option value="Morning Haze">Morning Haze</option>
+                      <option value="Cozy Denim">Cozy Denim</option>
+                      <option value="Rainy Day">Rainy Day</option>
+                  </select>
+                </form>
+              </div>
+               <!-- fill -->
+               <div  id="fillbox">
+                <h3>FILL</h3>
+                <form name="jump" class="colorselect">
+                  <select name="menu" id="selectFill">
+                      <option value="Duck Down" >Duck Down</option>
+                      <option value="Hypoallergenic Poly-blend">Hypoallergenic Poly-blend</option>
+                      <option value="Memory Foam">Memory Foam</option>
+                  </select>
+                </form>
+              </div>
+             <!-- button -->
+              <button class="button" onclick="onClick()" id="cart">ADD TO CART</button>
+              <button class="button button2">BUY NOW</button>
+        </div>
+    </div>
+
+   <!-- DETAIL DESCRIPTION -->
+    <div class="detail-box">
+            <h3>Details</h3>
+             <hr>
+            <img src="http://img.edilportale.com/products/prodotti-113134-rel5537d29e4f764ddd918f05237c15300f.jpg" id="detailPic" alt="item detal" style="width: 100%"/>
+            <p>No. 1 voted by Moms. The travel neck pillow is a must have during flight/train/car or any long distance travel! Pillow is 100% polyester.  </p>
+
+             <hr>
+            <h3>Similar Items</h3>
+            
+            <div class="compare">
+              <div class="similar fade">
+                <div class="numbertext">0 / 3</div>
+                <img src="2.jpg" style="width:100%">
+                <div class="text">pillow 1</div>
+              </div>
+              <div class="similar fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="3.jpg" style="width:100%">
+                <div class="text">pillow 2</div>
+              </div>
+              <div class="similar fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="4.jpg" style="width:100%">
+                <div class="text">pillow 3</div>
+              </div>
+              <div class="similar fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="1.jpg" style="width:100%">
+                <div class="text">pillow 3</div>
+              </div>
+              <!-- Next and previous -->
+              <a class="prev" onclick="plus(-1)">&#10094;</a>
+              <a class="next" onclick="plus(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The thumbnails -->
+            <div style="text-align:center">
+              <span class="thumb" onclick="currentPillow(1)"></span>
+              <span class="thumb" onclick="currentPillow(2)"></span>
+              <span class="thumb" onclick="currentPillow(3)"></span>
+        </div>
+    </div>
+
+
+ <!-- BOTTOM NEWSLETTER -->
+    <section id="bottom">
+        <div class="container2">
+            <h3>Subscribe To Our Newsletter!</h3>
+            <form>
+                <input type="email" placeholder="Enter Email..."/>
+                <button type="submit" class="button_1">Subscribe </button>
+            </form>
+        </div>
+    </section>
+</body>
+
+
+</html>

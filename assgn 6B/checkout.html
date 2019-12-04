@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="checkout.css">
+        <script src="checkout.js"></script>
+        <!-- some code referencing W3School --> 
+</head>
+
+<body onload="onload()">
+    <header>
+            <!-- TOP TITLE --> 
+            <div class="containter">
+                <div id="name">
+                    <a href="index.html">
+                        <h2>FLUFF STUFF</h2>
+                    </a>
+                </div>
+
+              <!-- NAV BAR -->
+                <div class="nav">        
+                      <a href="product.html">PRODUCT</a>
+                      <a href="collection.html">COLLECTIONS</a>
+                       <a href="#sale">SALE</a>
+                      <a href="#contact">CONTACT</a>
+                      <input type="text" placeholder="Search..">
+                      <img src="https://image.flaticon.com/icons/png/512/55/55369.png" alt="search bar" class="search-icon"  style="width:100%" />
+                      <img src="https://image.flaticon.com/icons/png/512/126/126515.png" alt="shopping cart" class="cart"  style="width:3%" />
+                      <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png" alt="sign in icon" class="account"  style="width:3%" />
+                </div>
+            </div>
+    </header>
+
+<!-- CART DETAIL -->
+    <h2 id="cartTitle"> My Shopping Cart</h2>
+    <div class="grid" id="storedItem"></div>
+  
+<!-- WISHLIST -->
+     <h2 id="cartTitle"> My Wish List</h2>
+    <div class="grid" id="WishedItem"></div>
+ 
+<!-- BOTTOM NEWSLETTER -->
+    <section id="bottom">
+        <form>   
+          <button type="submit" class="button_1" onclick="onClick()">Checkout </button>
+          <span class="total-price">Total    $219</span>
+        </form>
+    </section>
+</body>
+
+</html>
