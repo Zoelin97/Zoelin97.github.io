@@ -1,12 +1,12 @@
 * {box-sizing: border-box;}
 /*background effect*/
 body {
-  background:url(images/bubbles2.png) repeat fixed;
+  background:url(images/bubbles5.png) repeat fixed;
   align-content: center;
   margin: 5% 10%;
   font-family: 'Nanum Myeongjo', serif;
   align-content: center;
-  background-color: rgba(0,0,0,1);
+  background-color: #363531;
 }
 #center {
   width:90%;
@@ -127,11 +127,11 @@ html {
 /*parallel scrolling*/
 .parallax {
   background-image: url("images/negroni-2.png");
-  min-height: 1000px; 
+  min-height: 700px; 
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   margin-top: 600px;
   opacity: 0.5;
 }
@@ -150,7 +150,7 @@ html {
 }
 
 #name-bg #cocktail-name {
-  font-size: 55px;
+  font-size: 75px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;

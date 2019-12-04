@@ -2,12 +2,12 @@
 
 /*background effect*/
 body {
-  background:url(images/bubbles2.png) repeat fixed;
+  background:url(images/bubbles4.png) repeat fixed;
   align-content: center;
   margin: 5% 10%;
   font-family: 'Nanum Myeongjo', serif;
   align-content: center;
-  background-color: rgba(0,0,0,1);
+  background-color: #363531;
 }
 #center {
   width:90%;
@@ -75,7 +75,6 @@ html {
   margin: auto;
   top: 500px;
   min-height: 800px;
-  border: solid;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +86,7 @@ html {
   text-indent: 20px;
   text-align: justify;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 30px;
   color:white;
 }
 
@@ -101,6 +100,7 @@ html {
   margin-top: -1px; /* Prevent double borders */
   padding: 12px;
   color: white;
+  font-size: 30px;
 }
 .videobox {
   position: relative;
@@ -128,7 +128,7 @@ html {
   right: 15%;
   width: 100px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 10;
 
 }
 .recipe button {
@@ -156,7 +156,7 @@ html {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
+  z-index: 0.9;
   align-content: center;
   margin: auto;
 }
